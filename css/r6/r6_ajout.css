@@ -1,0 +1,121 @@
+body{
+	background:url('../../img/R6/background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.r6--ajout-logo{
+	margin: -3% 0 0 0;
+	display: flex;
+	justify-content: center;
+}
+
+.r6--logo-modif{
+	height: 380px;
+	width: 700px;
+}
+
+.form--contain-r6-ajout{
+	border-radius: 31px 31px 31px 31px;
+	margin: -6% 25% 0 25%;
+	padding: 1%;
+}
+
+.r6--ajout-contain{
+	margin: 2% 0 0 0;
+	display: flex;
+	justify-content: center;
+}
+
+label{
+	color: white;
+}
+
+input[type="radio"].radio--bouton {
+  	display: none;
+}
+input[type="radio"].radio--bouton + label {
+	padding: 0 3% 0 3%;
+	font-size: 3rem;
+	color: #fff;
+	background-color: transparent;
+	transition: all 0.15s ease-in-out;
+	text-transform: uppercase;
+	font-family: 'Electrolize', sans-serif;
+}
+input[type="radio"].radio--bouton.radio--bouton-1:hover + label {
+	color: #4D5CDE;
+	cursor: pointer;
+}
+input[type="radio"].radio--bouton.radio--bouton-1:checked + label {
+	color: #4D5CDE;
+}
+input[type="radio"].radio--bouton.radio--bouton-2:hover + label {
+	color: #FF5500;
+	cursor: pointer;
+}
+input[type="radio"].radio--bouton.radio--bouton-2:checked + label {
+	color: #FF5500;
+}
+
+input[type="text"].input--text{
+	background: transparent;
+	border: 3px solid white;
+	border-radius: 25px 25px 25px 25px;
+	padding: 2%;
+	font-size: 1.2rem;
+	margin: 1%;
+	caret-color: white;
+	color:#A81111;
+}
+
+input[type="text"].input--text:focus{
+	outline: none;
+}
+
+input[type="text"].input--text::placeholder{
+	color: rgb(150,150,150);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	transition: all 0.3s;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 5px;
+	font-size: 1.5rem;
+	margin-bottom: 0;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.3s;
+}
+
+.btn-1 {
+	border: 3px solid #fff;
+	color: #fff;
+}
+
+.btn-1a:hover,
+.btn-1a:active {
+	color: #A81111;
+	background: #fff;
+}

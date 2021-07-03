@@ -1,0 +1,162 @@
+body{
+	background:url('../../img/CSGO/background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.form-contain{
+	display: flex;
+	justify-content: center;
+}
+
+.form-contain:nth-child(1){
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.form-contain:nth-child(7){
+	margin-bottom: 1%;
+}
+
+.contain-form--ajout{
+	background-color: rgba(10,10,10,0.8);
+	padding: 1%;
+	margin: 1%;
+	border-radius: 15px 15px 15px 15px;
+}
+
+
+
+/*=============================================================
+FORMULAIRE
+==============================================================*/
+
+label{
+	color: white;
+}
+
+input[type="radio"].radio--bouton {
+  	display: none;
+}
+input[type="radio"].radio--bouton + label {
+	padding: 0 3% 0 3%;
+	font-size: 3rem;
+	color: #fff;
+	background-color: transparent;
+	transition: all 0.15s ease-in-out;
+	text-transform: uppercase;
+	font-family: 'Electrolize', sans-serif;
+}
+
+input[type="radio"].radio--bouton.radio--bouton-2:hover + label {
+	color: #FF5500;
+	cursor: pointer;
+}
+input[type="radio"].radio--bouton.radio--bouton-2:checked + label {
+	color: #FF5500;
+}
+
+input[type="text"].input--text{
+	background: transparent;
+	border: 3px solid white;
+	border-radius: 25px 25px 25px 25px;
+	padding: 1%;
+	font-size: 1.2rem;
+	margin: 1%;
+	caret-color: white;
+	color:#A81111;
+}
+
+input[type="text"].input--text:focus{
+	outline: none;
+}
+
+input[type="text"].input--text::placeholder{
+	color: rgb(150,150,150);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+input[type="number"].input--number{
+	background: transparent;
+	border: 3px solid white;
+	border-radius: 25px 25px 25px 25px;
+	padding: 1%;
+	font-size: 1.2rem;
+	margin: 1%;
+	caret-color: white;
+	color:#A81111;
+}
+
+input[type="number"].input--number:focus{
+	outline: none;
+}
+
+input[type="number"].input--number::placeholder{
+	color: rgb(150,150,150);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+input[type="radio"].radio--bouton-category {
+  	display: none;
+}
+input[type="radio"].radio--bouton-category + label {
+	padding: 0 3% 0 3%;
+	font-size: 3rem;
+	color: #fff;
+	background-color: transparent;
+	transition: all 0.15s ease-in-out;
+	text-transform: uppercase;
+	font-family: 'Electrolize', sans-serif;
+}
+input[type="radio"].radio--bouton-category.radio--bouton-category-1:hover + label {
+	color: #4D5CDE;
+	cursor: pointer;
+}
+input[type="radio"].radio--bouton-category.radio--bouton-category-1:checked + label {
+	color: #4D5CDE;
+}
+
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	transition: all 0.3s;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 5px;
+	font-size: 1.5rem;
+	margin-bottom: 0;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.3s;
+}
+
+.btn-1 {
+	border: 3px solid #fff;
+	color: #fff;
+}
+
+.btn-1a:hover,
+.btn-1a:active {
+	color: #A81111;
+	background: #fff;
+}
+
+/*====================================================================*/

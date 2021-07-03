@@ -1,0 +1,243 @@
+body{
+	background:url('../../img/R6/background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+/*R6 SELECTEUR D'AGENT*/
+
+.r6--logo{
+	margin: -2% 0 0 0;
+	display: flex;
+	justify-content: center;
+}
+
+.r6--logo-modif{
+	height: 380px;
+	width: 700px;
+}
+
+.r6--logo-modif-mobile{
+	height: 410px;
+	width: 300px;
+}
+
+.r6-mobile-display{
+	display: none;
+}
+
+.r6--def{
+	text-align: center;
+	font-size: 1.5rem;
+	color:#A81111;
+	font-weight: 900;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 1px;
+}
+
+.r6--contain{
+	margin: 3% 0 0 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.r6--contain-agent{
+	display: flex;
+	justify-content: center;
+}
+
+/*.r6--agent-title{
+	text-align: center;
+	font-size: 2rem;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 900;
+}*/
+
+.r6--agent-img{
+	height:250px;
+	width: 250px;
+}
+
+.r6--contain-weapon{
+	margin: 2% 0 0 0 ;
+	display: flex;
+	justify-content: space-around;
+}
+
+.r6--weapons{
+	font-family: 'Electrolize', sans-serif;
+	font-size: 2.5rem;
+	color: white;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	flex: 1;
+	text-align: center;
+	text-shadow: 1px 0 0 #fff, 0px 0 0 #fff, 0 1px 0 #fff, 0 0px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.r6-retour-menu{
+	text-align: center;
+	font-size: 1.5rem;
+	color:white;
+	font-weight: 500;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 3px;
+	transition: 0.4s all;
+}
+
+
+.r6-retour-menu:hover{
+	color:#A81111;
+	transition: 0.4s all;
+}
+
+.r6--menu-place{
+	display: flex;
+	justify-content: center;
+}
+
+/*=========================
+FORM
+=========================*/
+
+.r6--form-contain{
+	margin: 7% 0 0 0;
+	display: flex;
+	justify-content: center;
+}
+
+input[type="radio"].radio--bouton {
+  	display: none;
+}
+input[type="radio"].radio--bouton + label {
+	padding: 0 3% 0 3%;
+	font-size: 3rem;
+	color: #fff;
+	background-color: transparent;
+	transition: all 0.15s ease-in-out;
+	text-transform: uppercase;
+	font-family: 'Electrolize', sans-serif;
+}
+input[type="radio"].radio--bouton.radio--bouton-1:hover + label {
+	color: #4D5CDE;
+	cursor: pointer;
+}
+input[type="radio"].radio--bouton.radio--bouton-1:checked + label {
+	color: #4D5CDE;
+}
+input[type="radio"].radio--bouton.radio--bouton-2:hover + label {
+	color: #FF5500;
+	cursor: pointer;
+}
+input[type="radio"].radio--bouton.radio--bouton-2:checked + label {
+	color: #FF5500;
+}
+
+.r6--btn-submit{
+	margin: 10% 0 0 0 ;
+	display: flex;
+	justify-content: center;
+}
+
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	transition: all 0.3s;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 5px;
+	font-size: 1.5rem;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.3s;
+}
+
+.btn-1 {
+	border: 3px solid #fff;
+	color: #fff;
+}
+
+.btn-1a:hover,
+.btn-1a:active {
+	color: #A81111;
+	background: #fff;
+}
+
+.btn--actualiser{
+	padding: 30px !important;
+	margin-left: 0px !important;
+}
+
+.btnmodif{
+	font-size: 1rem !important;
+}
+/*======================================================*/
+
+.reroll-form{
+	display: flex;
+	justify-content: center;
+}
+
+/*TRANSITION AFFICHAGE AGENT*/
+
+.affichage--agent{
+
+  animation: pulse 0.5s;
+}
+
+.affichage--principale{
+
+  animation: pulse 1s;
+}
+
+.affichage--secondaire{
+
+  animation: pulse 1.5s;
+}
+
+.affichage--equipement{
+
+  animation: pulse 2s;
+}
+
+@keyframes pulse {
+  0% {
+   	opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*----------------------------*/
+
+.affichage--start{
+
+  animation: debut 0.5s;
+}
+
+@keyframes debut {
+  0% {
+   	opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

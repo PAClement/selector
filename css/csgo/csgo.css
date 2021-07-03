@@ -1,0 +1,237 @@
+body{
+	background:url('../../img/CSGO/background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.cs-title--contain{
+	display: flex;
+	justify-content: center;
+	margin: 1% 0 0 0;
+}
+
+.cs--logo{
+	height: 300px;
+	width: 1700px;
+}
+
+.cs--contain-element{
+	background-color: rgba(0,0,0,0.8); 
+	margin: 1% 1% 0 1%;
+	height: 550px;
+	padding: 1%;
+	border-radius: 25px 25px 25px 25px;
+}
+
+.cs-info{
+	color:#A81111;
+	font-weight: 900;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: 2rem;
+	margin: 1% 0 0% 0;
+}
+
+.cs-form--contain{
+	margin: 3% 0 0 0 ;
+}
+
+.cs-form--radio{
+	display: flex;
+	justify-content: center;
+	margin: 0 0 4% 0;
+}
+
+.cs-retour-menu{
+	text-align: center;
+	font-size: 1.5rem;
+	color:white;
+	font-weight: 500;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 3px;
+	transition: 0.4s all;
+}
+
+
+.cs-retour-menu:hover{
+	color:#A81111;
+	transition: 0.4s all;
+}
+
+.cs--menu-place{
+	display: flex;
+	justify-content: center;
+}
+
+
+/*==============================================
+FORMULAIRE
+================================================*/
+
+label{
+	color: white;
+}
+
+input[type="radio"].radio--bouton-category {
+  	display: none;
+}
+input[type="radio"].radio--bouton-category + label {
+	padding: 0 3% 0 3%;
+	font-size: 2.5rem;
+	color: #fff;
+	background-color: transparent;
+	transition: all 0.15s ease-in-out;
+	text-transform: uppercase;
+	font-family: 'Electrolize', sans-serif;
+}
+input[type="radio"].radio--bouton-category.radio--bouton-category-1:hover + label {
+	color: #842525;
+	cursor: pointer;
+}
+input[type="radio"].radio--bouton-category.radio--bouton-category-1:checked + label {
+	color: #842525;
+}
+
+input[type="radio"].radio--bouton-side {
+  	display: none;
+}
+input[type="radio"].radio--bouton-side + label {
+	padding: 0 3% 0 3%;
+	font-size: 3rem;
+	color: #fff;
+	background-color: transparent;
+	transition: all 0.15s ease-in-out;
+	text-transform: uppercase;
+	font-family: 'Electrolize', sans-serif;
+}
+input[type="radio"].radio--bouton-side.radio--bouton-side-1:hover + label {
+	
+	color: #3485D6;
+	cursor: pointer;
+}
+input[type="radio"].radio--bouton-side.radio--bouton-side-1:checked + label {
+	
+	color: #3485D6;
+}
+
+input[type="radio"].radio--bouton-side.radio--bouton-side-2:hover + label {
+
+	color: #F1771C;
+	cursor: pointer;
+}
+input[type="radio"].radio--bouton-side.radio--bouton-side-2:checked + label {
+	
+	color: #F1771C;
+}
+
+
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	transition: all 0.3s;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 5px;
+	font-size: 1.5rem;
+	margin-bottom: 0;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.3s;
+}
+
+.btn-1 {
+	border: 3px solid #fff;
+	color: #fff;
+}
+
+.btn-1a:hover,
+.btn-1a:active {
+	color: #A81111;
+	background: #fff;
+}
+
+
+.cs-form-contain-btn{
+	display: flex;
+	justify-content: center;
+	margin: 1% 0 0 0;
+}
+
+.btn--actualiser{
+	padding: 30px !important;
+	margin-left: 0px !important;
+}
+
+.btnmodif{
+	font-size: 1rem !important;
+}
+
+/*=============================================================*/
+.reroll-form{
+	display: flex;
+	justify-content: center;
+}
+
+.cs-res-contain{
+	display: flex;
+	justify-content: center;
+	margin:5% 0 5% 0;
+}
+
+.cs-res-logo{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5%;
+}
+
+.cs-res{
+	font-family: 'Electrolize', sans-serif;
+	font-size: 3rem;
+	color: white;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.cs-column{
+	display: flex;
+	flex-direction: column;
+}
+
+.affichage--start{
+
+  animation: debut 0.5s;
+}
+
+@keyframes debut {
+  0% {
+   	opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.logo-weapons{
+	height: 100px;
+	width: auto;
+	position: relative;
+}
